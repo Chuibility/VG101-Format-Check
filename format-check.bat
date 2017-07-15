@@ -23,12 +23,12 @@ for /D %%s in (*) do (
         if !exfile!==0 (
             echo Error: No Source file found in !temp!.
         )
-        echo.
         cd ..
     ) else (
         echo Error: Directory !temp! invalid.
         set /a error=1
     )
+    echo.
 ) 
 
 echo.
